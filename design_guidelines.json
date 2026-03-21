@@ -1,0 +1,162 @@
+{
+  "identity": {
+    "name": "NEXIQ",
+    "tone": "Premium, Developer-Centric, Precision, High-Velocity",
+    "aesthetic": "Dark Mode Tech, Neon Accents, Glassmorphism, Bento Grids",
+    "archetype": "The Performance Pro (Elite Athleticism & Precision)"
+  },
+  "typography": {
+    "fonts": {
+      "heading": {
+        "name": "Space Grotesk",
+        "url": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap",
+        "usage": "font-heading",
+        "weights": ["400", "500", "600", "700"]
+      },
+      "body": {
+        "name": "Inter",
+        "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap",
+        "usage": "font-sans",
+        "weights": ["300", "400", "500", "600"]
+      },
+      "code": {
+        "name": "JetBrains Mono",
+        "url": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap",
+        "usage": "font-mono",
+        "weights": ["400", "500"]
+      }
+    },
+    "rules": [
+      "Headings: tracking-tight (-0.02em to -0.04em). Leading-none for sizes above 4xl.",
+      "Body: relaxed leading for readability.",
+      "Labels: uppercase, tracking-widest, text-xs, font-semibold, text-muted-foreground.",
+      "Code: usage of font-mono for all technical terms, snippets, and token counts."
+    ]
+  },
+  "colors": {
+    "theme": "dark",
+    "palette": {
+      "background": "#09090b",
+      "foreground": "#fafafa",
+      "card": "#18181b",
+      "card_foreground": "#fafafa",
+      "popover": "#09090b",
+      "popover_foreground": "#fafafa",
+      "primary": "#6366f1",
+      "primary_foreground": "#fafafa",
+      "secondary": "#27272a",
+      "secondary_foreground": "#fafafa",
+      "muted": "#27272a",
+      "muted_foreground": "#a1a1aa",
+      "accent": "#27272a",
+      "accent_foreground": "#fafafa",
+      "destructive": "#be123c",
+      "destructive_foreground": "#fafafa",
+      "border": "#27272a",
+      "input": "#27272a",
+      "ring": "#6366f1"
+    },
+    "gradients": {
+      "hero_glow": "radial-gradient(circle at center, rgba(99, 102, 241, 0.15) 0%, rgba(9, 9, 11, 0) 70%)",
+      "beam": "linear-gradient(to right, transparent, #6366f1, transparent)",
+      "glass": "rgba(9, 9, 11, 0.7)"
+    },
+    "chart_colors": {
+      "chart_1": "#6366f1",
+      "chart_2": "#8b5cf6",
+      "chart_3": "#ec4899",
+      "chart_4": "#10b981",
+      "chart_5": "#f59e0b"
+    }
+  },
+  "spacing": {
+    "radius": "0.3rem",
+    "container_padding": "p-6 md:p-8 lg:p-12",
+    "section_gap": "gap-8 md:gap-12",
+    "layout_rules": [
+      "Use 'container mx-auto' with 'px-4 md:px-6' for max-width constraints.",
+      "Sidebar width: w-64 (256px) fixed on desktop, slide-over on mobile.",
+      "Chat container: max-w-3xl mx-auto for readability."
+    ]
+  },
+  "images": {
+    "hero_abstract": {
+      "url": "https://images.pexels.com/photos/17483874/pexels-photo-17483874.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "alt": "Abstract Neural Network Visualization",
+      "usage": "Hero section background or feature graphic"
+    },
+    "developer_working": {
+      "url": "https://images.unsplash.com/photo-1719400471588-575b23e27bd7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MDV8MHwxfHNlYXJjaHwxfHxwcm9ncmFtbWVyJTIwY29kaW5nJTIwZGFyayUyMHJvb218ZW58MHx8fHwxNzczOTY2MDE4fDA&ixlib=rb-4.1.0&q=85",
+      "alt": "Developer coding with multiple screens",
+      "usage": "Testimonial section or About page"
+    },
+    "code_screen": {
+      "url": "https://images.unsplash.com/photo-1773349807434-374473797148?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MDV8MHwxfHNlYXJjaHwyfHxwcm9ncmFtbWVyJTIwY29kaW5nJTIwZGFyayUyMHJvb218ZW58MHx8fHwxNzczOTY2MDE4fDA&ixlib=rb-4.1.0&q=85",
+      "alt": "Close up of code on screen",
+      "usage": "Feature detail or background texture"
+    },
+    "abstract_glow": {
+      "url": "https://images.unsplash.com/photo-1585427074397-a6fec413c00e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHw0fHxhYnN0cmFjdCUyMG5ldXJhbCUyMG5ldHdvcmslMjBkYXJrJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3NzM5NjYwMTh8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Red light abstract glow",
+      "usage": "Accent background for dark sections"
+    }
+  },
+  "components": {
+    "buttons": {
+      "variants": {
+        "default": "bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_15px_rgba(99,102,241,0.5)] transition-all duration-300",
+        "outline": "border-input bg-transparent hover:bg-accent hover:text-accent-foreground border",
+        "ghost": "hover:bg-accent hover:text-accent-foreground",
+        "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80"
+      },
+      "radius": "rounded-md"
+    },
+    "cards": {
+      "style": "bg-card text-card-foreground border border-border/50 shadow-sm",
+      "hover": "hover:border-primary/50 hover:shadow-[0_0_20px_rgba(99,102,241,0.15)] transition-all duration-300 group"
+    },
+    "inputs": {
+      "style": "bg-input/50 border-transparent focus:border-primary focus:ring-1 focus:ring-primary placeholder:text-muted-foreground/50 transition-all duration-200"
+    },
+    "sidebar": {
+      "style": "bg-muted/30 border-r border-border backdrop-blur-xl"
+    },
+    "chat_bubble": {
+      "user": "bg-primary text-primary-foreground rounded-2xl rounded-tr-sm",
+      "ai": "bg-muted text-foreground rounded-2xl rounded-tl-sm border border-border/50"
+    }
+  },
+  "layout_patterns": {
+    "landing_hero": "Centered H1 with 'text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500'. Subtext 'text-xl text-muted-foreground'. Two CTA buttons (Primary & Outline). Background: 'hero_glow' gradient.",
+    "bento_grid": "Grid cols-1 md:cols-3 gap-4. Feature cards with icons on top-left, text bottom-left. Use 'col-span-2' for major features.",
+    "chat_interface": "Sidebar (Left, Fixed). Chat Window (Center, Scrollable). Input Area (Bottom, Fixed, Floating Glass). Top Bar (Model Selector, User Profile)."
+  },
+  "motion": {
+    "page_transition": "initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}",
+    "hover_lift": "hover:-translate-y-1 transition-transform duration-300",
+    "fade_in": "animate-in fade-in duration-500",
+    "slide_in": "animate-in slide-in-from-bottom-4 duration-500"
+  },
+  "accessibility": {
+    "rules": [
+      "Ensure text contrast > 4.5:1.",
+      "Focus rings must be visible (ring-2 ring-primary).",
+      "All interactive elements must have aria-labels if no text is present.",
+      "Support keyboard navigation for chat history and inputs."
+    ]
+  },
+  "icons": {
+    "library": "lucide-react",
+    "style": "stroke-1.5 w-5 h-5"
+  },
+  "universal_guidelines": [
+    "Do not use generic gradients. Use subtle radial glows.",
+    "Avoid 'Inter' for headings; use 'Space Grotesk'.",
+    "Dark mode is default. Light mode is secondary (or hidden if not requested, but toggle exists).",
+    "Code blocks must use a distinct background (e.g., #1e1e20) with syntax highlighting.",
+    "Input areas should feel 'floating' with backdrop-blur.",
+    "Use 'sonner' for toasts.",
+    "Export components as named exports.",
+    "Pages as default exports."
+  ]
+}

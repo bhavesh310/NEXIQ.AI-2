@@ -1,0 +1,94 @@
+{
+  "summary": {
+    "tests_run": 14,
+    "tests_passed": 14,
+    "success_rate": 1.0,
+    "timestamp": "2026-03-20T00:29:23.542703"
+  },
+  "results": [
+    {
+      "test": "API Root Health Check",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2026-03-20T00:29:20.861048"
+    },
+    {
+      "test": "API Health Endpoint",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2026-03-20T00:29:20.910144"
+    },
+    {
+      "test": "User Registration",
+      "passed": true,
+      "details": "Status: 200, Token: \u2713",
+      "timestamp": "2026-03-20T00:29:21.238788"
+    },
+    {
+      "test": "Auth Me Endpoint",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2026-03-20T00:29:21.305109"
+    },
+    {
+      "test": "Create Conversation",
+      "passed": true,
+      "details": "Status: 200, ID: conv_c6a14b90e1e4",
+      "timestamp": "2026-03-20T00:29:21.397187"
+    },
+    {
+      "test": "Get Conversations",
+      "passed": true,
+      "details": "Status: 200, Count: 1",
+      "timestamp": "2026-03-20T00:29:21.451664"
+    },
+    {
+      "test": "Get Conversation",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2026-03-20T00:29:21.499115"
+    },
+    {
+      "test": "Send Message Stream",
+      "passed": true,
+      "details": "Status: 200, Chunks: 5",
+      "timestamp": "2026-03-20T00:29:22.880076"
+    },
+    {
+      "test": "Get Messages",
+      "passed": true,
+      "details": "Status: 200, Count: 2",
+      "timestamp": "2026-03-20T00:29:23.029998"
+    },
+    {
+      "test": "Update Conversation",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2026-03-20T00:29:23.079471"
+    },
+    {
+      "test": "Token Usage",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2026-03-20T00:29:23.139521"
+    },
+    {
+      "test": "Delete Conversation",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2026-03-20T00:29:23.199677"
+    },
+    {
+      "test": "User Logout",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2026-03-20T00:29:23.251830"
+    },
+    {
+      "test": "User Login",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2026-03-20T00:29:23.542566"
+    }
+  ]
+}

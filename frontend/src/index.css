@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 240 10% 3.9%;
+        --foreground: 0 0% 98%;
+        --card: 240 10% 7%;
+        --card-foreground: 0 0% 98%;
+        --popover: 240 10% 3.9%;
+        --popover-foreground: 0 0% 98%;
+        --primary: 239 84% 67%;
+        --primary-foreground: 0 0% 98%;
+        --secondary: 240 4% 16%;
+        --secondary-foreground: 0 0% 98%;
+        --muted: 240 4% 16%;
+        --muted-foreground: 240 5% 65%;
+        --accent: 240 4% 16%;
+        --accent-foreground: 0 0% 98%;
+        --destructive: 0 84% 60%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 240 4% 16%;
+        --input: 240 4% 16%;
+        --ring: 239 84% 67%;
+        --radius: 0.3rem;
+        --chart-1: 239 84% 67%;
+        --chart-2: 262 83% 58%;
+        --chart-3: 328 85% 62%;
+        --chart-4: 160 84% 39%;
+        --chart-5: 35 92% 52%;
+    }
+    
+    .light {
+        --background: 0 0% 100%;
+        --foreground: 240 10% 3.9%;
+        --card: 0 0% 100%;
+        --card-foreground: 240 10% 3.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 240 10% 3.9%;
+        --primary: 239 84% 67%;
+        --primary-foreground: 0 0% 98%;
+        --secondary: 240 5% 96%;
+        --secondary-foreground: 240 6% 10%;
+        --muted: 240 5% 96%;
+        --muted-foreground: 240 4% 46%;
+        --accent: 240 5% 96%;
+        --accent-foreground: 240 6% 10%;
+        --destructive: 0 84% 60%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 240 6% 90%;
+        --input: 240 6% 90%;
+        --ring: 239 84% 67%;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    
+    html {
+        @apply scroll-smooth;
+    }
+    
+    body {
+        @apply bg-background text-foreground font-sans antialiased;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-heading tracking-tight;
+    }
+    
+    code, pre {
+        @apply font-mono;
+    }
+}
+
+@layer components {
+    .glass {
+        @apply bg-background/70 backdrop-blur-xl border border-border/50;
+    }
+    
+    .glow-primary {
+        box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
+    }
+    
+    .glow-primary-hover:hover {
+        box-shadow: 0 0 30px rgba(99, 102, 241, 0.5);
+    }
+    
+    .text-gradient {
+        @apply bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400;
+    }
+    
+    .btn-primary {
+        @apply bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg transition-all duration-300;
+        box-shadow: 0 0 15px rgba(99, 102, 241, 0.5);
+    }
+    
+    .btn-primary:hover {
+        box-shadow: 0 0 25px rgba(99, 102, 241, 0.7);
+    }
+    
+    .chat-bubble-user {
+        @apply bg-primary text-primary-foreground rounded-2xl rounded-tr-sm;
+    }
+    
+    .chat-bubble-ai {
+        @apply bg-muted text-foreground rounded-2xl rounded-tl-sm border border-border/50;
+    }
+    
+    .sidebar-item {
+        @apply flex items-center gap-3 px-3 py-2 rounded-md text-sm text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors cursor-pointer;
+    }
+    
+    .sidebar-item.active {
+        @apply text-foreground bg-muted;
+    }
+    
+    .input-floating {
+        @apply bg-muted/50 border-transparent focus:border-primary focus:ring-1 focus:ring-primary backdrop-blur-sm;
+    }
+    
+    .code-block {
+        @apply bg-[#1e1e20] rounded-md overflow-hidden;
+    }
+    
+    .code-block pre {
+        @apply p-4 overflow-x-auto;
+    }
+}
+
+@layer utilities {
+    .animate-delay-100 {
+        animation-delay: 100ms;
+    }
+    .animate-delay-200 {
+        animation-delay: 200ms;
+    }
+    .animate-delay-300 {
+        animation-delay: 300ms;
+    }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/20 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/40;
+}
+
+/* Selection */
+::selection {
+    @apply bg-primary/30;
+}
+
+/* Focus visible */
+:focus-visible {
+    @apply outline-none ring-2 ring-primary ring-offset-2 ring-offset-background;
+}
